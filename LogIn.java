@@ -40,11 +40,12 @@ import javax.swing.*;
 	   public void actionPerformed(ActionEvent event)
      {
 	      String contra, intro;
-        contra="password";
-        intro = JOptionPane.showInputDialog("Introduce password");
-        if (contra==intro)
+        contra = "password";
+        intro = JOptionPane.showInputDialog(null,"Introduce password","Sistema",JOptionPane.QUESTION_MESSAGE);
+        if (intro.equals(contra))
         {
-          //instanciar juego en si
+          dispose(); //destruye ventana
+          //new Menu; //va a la clase principal
         }
         else
         {
