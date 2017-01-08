@@ -10,31 +10,27 @@ import javax.swing.*;
   public class LogIn extends JFrame implements ActionListener
   {
 	   private JButton boton;
-	   private JLabel titulo;
 
-     public static void main(String[] args)
+     public static void main(String args[])
      {
-		    LogIn marco = new LogIn();
-        marco.setSize(110, 100);
-        marco.crearGUI();
-        marco.setVisible(true);
-        marco.setTitle("QuizYou");  // Permite crear el titulo del marco
-        marco.getContentPane().setBackground(Color.red); // permite asignarle un color al marco
+       new LogIn ();// llamo la clase
 		 }
 
-     public void crearGUI()
+     public LogIn()
      {
-       setDefaultCloseOperation(EXIT_ON_CLOSE);
-       Container ventana = getContentPane();
-       ventana.setLayout(new FlowLayout());
+       this.setLayout(null);
+       this.setSize(110,50); //tamaño de ventana
+       this.setTitle("QuizYou"); //título de la ventana
+       this.setVisible(true);
+       this.setResizable(true);
+       this.setLocationRelativeTo(null);//centra la ventana
+       this.getContentPane().setBackground(Color.red);//le da color a la ventana
 
-       titulo = new JLabel("QuizYou");
-     	 titulo.setFont(new Font("Serif", Font.BOLD, 24));
-     	 ventana.add(titulo);
+              boton = new JButton("Jugar");
+              add(boton);
+              boton.setBounds(0, 0, 110, 25);
+              boton.addActionListener(this);
 
-       boton = new JButton("Jugar");
-     	 ventana.add(boton);
-     	 boton.addActionListener(this);
 	   }
 
 	   public void actionPerformed(ActionEvent event)
@@ -45,7 +41,7 @@ import javax.swing.*;
         if (intro.equals(contra))
         {
           dispose(); //destruye ventana
-          //new Menu; //va a la clase principal
+          new Menu (); //va a la clase principal
         }
         else
         {
