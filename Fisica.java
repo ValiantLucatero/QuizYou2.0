@@ -181,7 +181,6 @@ import javax.swing.*;
     	else if (origen == botonCerrar)
 		{
     		dispose();// Cierra el formulario
-        new Menu ();
 
     	}
 		else if (origen == botonLimpiar)

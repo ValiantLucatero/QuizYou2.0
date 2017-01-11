@@ -57,18 +57,15 @@ import javax.swing.*;
      {
        if (event.getSource() == historia)
        {
-         dispose(); //destruye la ventana
          new Historia();
        }
        if (event.getSource() == otc)
        {
-         dispose(); //destruye la ventana
-         //new OTC();
+         new Programacion();
        }
        if (event.getSource() == fisica)
        {
-         dispose(); //destruye la ventana
-         //new Fisica();
+         new Fisica();
        }
        if (event.getSource() == salir)
        {
