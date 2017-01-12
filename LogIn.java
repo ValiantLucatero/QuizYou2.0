@@ -24,7 +24,7 @@ import javax.swing.*;
        this.setVisible(true);
        this.setResizable(true);
        this.setLocationRelativeTo(null);//centra la ventana
-       this.getContentPane().setBackground(Color.red);//le da color a la ventana
+       this.getContentPane().setBackground(new Color(42,114,138));//le da color a la ventana
 
               boton = new JButton("Jugar");
               add(boton);

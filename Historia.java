@@ -30,7 +30,7 @@ import javax.swing.JScrollBar;
         //this.getContentPane().add(vbar, BorderLayout.EAST);
 
         setLayout(null);
-        this.setSize(500,800); //tamaño de la ventana
+        this.setSize(450,550); //tamaño de la ventana
         this.setTitle("Historia"); //título de la ventana
         this.setVisible(true);
         this.setResizable(true);
@@ -52,11 +52,13 @@ import javax.swing.JScrollBar;
         this.add(r1);
         g1.add(r1);
         r1.setBounds(0,40,100,20);
+        r1.setBackground(new Color(42,114,138));
 
         rUno = new JRadioButton("Falso");
 		    this.add(rUno);
 		    g1.add(rUno);
         rUno.setBounds(120,40,65,20);
+        rUno.setBackground(new Color(42,114,138));
 
 		//Pregunta 3
         p3 = new JLabel("2.- El verdadero nombre de Pancho Villa es Doroteo Arango");
@@ -69,11 +71,13 @@ import javax.swing.JScrollBar;
         this.add(r3);
 		    g3.add(r3);
         r3.setBounds(0,80,100,20);
+        r3.setBackground(new Color(42,114,138));
 
         rTres = new JRadioButton("Falso");
 		    this.add(rTres);
 		    g3.add(rTres);
         rTres.setBounds(120,80,65,20);
+        rTres.setBackground(new Color(42,114,138));
 
 		//Pregunta 4
         p4 = new JLabel("3.- El porfiriato duro 1/2 siglo");
@@ -86,11 +90,13 @@ import javax.swing.JScrollBar;
         this.add(r4);
 		    g4.add(r4);
         r4.setBounds(0,120,100,20);
+        r4.setBackground(new Color(42,114,138));
 
         rCuatro = new JRadioButton("Falso");
 		    this.add(rCuatro);
 		    g4.add(rCuatro);
         rCuatro.setBounds(120,120,65,20);
+        rCuatro.setBackground(new Color(42,114,138));
 
 		//Pregunta 5
         p5 = new JLabel("4.- La conquista de Mexico-Tenochtitlan fue en 1531");
@@ -103,11 +109,13 @@ import javax.swing.JScrollBar;
         this.add(r5);
 		    g5.add(r5);
         r5.setBounds(0,160,100,20);
+        r5.setBackground(new Color(42,114,138));
 
         rCinco = new JRadioButton("Falso");
 		    this.add(rCinco);
 		    g5.add(rCinco);
         rCinco.setBounds(120,160,65,20);
+        rCinco.setBackground(new Color(42,114,138));
 
 		//Pregunta 6
         p6 = new JLabel("5.- Morelos fue el primero en hablar de independencia");
@@ -119,70 +127,95 @@ import javax.swing.JScrollBar;
         r6 = new JRadioButton("Verdadero");
         this.add(r6);
 		    g6.add(r6);
+        r6.setBounds(0,200,100,20);
+        r6.setBackground(new Color(42,114,138));
 
         rSeis = new JRadioButton("Falso");
-		this.add(rSeis);
-		g6.add(rSeis);
+		    this.add(rSeis);
+		    g6.add(rSeis);
+        rSeis.setBounds(120,200,65,20);
+        rSeis.setBackground(new Color(42,114,138));
 
 		//Pregunta 7
         p7 = new JLabel("6.- El primer partido politico fue el PNR");
         this.add(p7);
+        p7.setBounds(0,220,400,20);
 
 		g7 = new ButtonGroup();
 
         r7 = new JRadioButton("Verdadero");
         this.add(r7);
-		g7.add(r7);
+		    g7.add(r7);
+        r7.setBounds(0,240,100,20);
+        r7.setBackground(new Color(42,114,138));
 
         rSiete = new JRadioButton("Falso");
-		this.add(rSiete);
-		g7.add(rSiete);
+		    this.add(rSiete);
+		    g7.add(rSiete);
+        rSiete.setBounds(120,240,65,20);
+        rSiete.setBackground(new Color(42,114,138));
 
 		//Pregunta 8
-        p8 = new JLabel("7.- Selecciona la imagen que corresponde a la bandera utilizada por Maximiliano de Habsburgo");
+        p8 = new JLabel("7.- Bandera utilizada por Maximiliano de Habsburgo");
         this.add(p8);
+        p8.setBounds(0,260,400,20);
+
+        r8 = new JCheckBox();
+        this.add(r8);
+        r8.setBounds(90,380,20,20);
+        r8.setBackground(new Color(42,114,138));
 
         int width = 200;
         int height = 100;
         ImageIcon img1 = new ImageIcon(new ImageIcon("img1.png").getImage().getScaledInstance(width, height, Image.SCALE_SMOOTH));
         JLabel imgUno = new JLabel(img1);
         this.add(imgUno);
-        r8 = new JCheckBox();
-        this.add(r8);
+        imgUno.setBounds(0,280,200,100);
+
+        rOcho = new JCheckBox();
+        this.add(rOcho);
+        rOcho.setBounds(300,380,20,20);
+        rOcho.setBackground(new Color(42,114,138));
 
         ImageIcon img2 = new ImageIcon(new ImageIcon("img2.jpg").getImage().getScaledInstance(width, height, Image.SCALE_SMOOTH));
         JLabel imgDos = new JLabel(img2);
         this.add(imgDos);
-        rOcho = new JCheckBox();
-		    this.add(rOcho);
+        imgDos.setBounds(210,280,200,100);
+
 
 		//Pregunta 9
-        p9 = new JLabel("8.- El expresidente Fox fue el primer presidente de oposicion desde la creacion de los partidos politicos");
+        p9 = new JLabel("8.- El expresidente Fox fue el primer presidente de oposicion");
         this.add(p9);
+        p9.setBounds(0,400,450,20);
 
 		g9 = new ButtonGroup();
 
         r9 = new JRadioButton("Verdadero");
         this.add(r9);
 		    g9.add(r9);
+        r9.setBounds(0,420,100,20);
+        r9.setBackground(new Color(42,114,138));
 
         rNueve = new JRadioButton("Falso");
 		    this.add(rNueve);
 		    g9.add(rNueve);
+        rNueve.setBounds(120,420,65,20);
+        rNueve.setBackground(new Color(42,114,138));
 
+        //Botones
         botonEnviar = new JButton("Revisar");
         this.add(botonEnviar);
-        botonEnviar.setBounds(200, 600, 90, 20);
+        botonEnviar.setBounds(200, 450, 90, 20);
         botonEnviar.addActionListener(this);
 
         botonCerrar = new JButton("Salir");
         this.add(botonCerrar);
-        botonCerrar.setBounds(210, 620, 70, 20);
+        botonCerrar.setBounds(210, 470, 70, 20);
         botonCerrar.addActionListener(this);
 
 		    botonLimpiar = new JButton("Limpiar");
         this.add(botonLimpiar);
-        botonLimpiar.setBounds(200, 640, 90, 20);
+        botonLimpiar.setBounds(200, 490, 90, 20);
         botonLimpiar.addActionListener(this);
 
     }
@@ -190,46 +223,46 @@ import javax.swing.JScrollBar;
     public void actionPerformed(ActionEvent event) {
     	Object origen= event.getSource(); //permite trabajar con mas de un botón
       int contador;
-      contador=10;
+      contador=8;
       ArrayList<String> list = new ArrayList<String>();
     	if (origen == botonEnviar)
     	{
-           if (rUno.isSelected())
+           if (!(r1.isSelected()))
            {
              contador--;
              list.add("1");
            }
-           if (rTres.isSelected())
+           if (!(r3.isSelected()))
            {
              contador--;
              list.add("2");
            }
-           if (r4.isSelected())
+           if (!(rCuatro.isSelected()))
            {
              contador--;
              list.add("3");
            }
-           if (r5.isSelected())
+           if (!(rCinco.isSelected()))
            {
              contador--;
              list.add("4");
            }
-           if (rSeis.isSelected())
+           if (!(r6.isSelected()))
            {
              contador--;
              list.add("5");
            }
-           if (rSiete.isSelected())
+           if (!(r7.isSelected()))
            {
              contador--;
              list.add("6");
            }
-           //if (r.isSelected())
-           //{
-             //contador--;
-             //list.add("7");
-           //}
-           if (rNueve.isSelected())
+           if (!(r8.isSelected()))
+           {
+             contador--;
+             list.add("7");
+           }
+           if (!(r9.isSelected()))
            {
              contador--;
              list.add("8");
