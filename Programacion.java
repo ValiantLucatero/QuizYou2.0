@@ -7,7 +7,7 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 import java.util.*;
-import javax.swing.JScrollBar;
+//import javax.swing.JScrollBar;
 
 
   public class Programacion extends JFrame implements ActionListener
